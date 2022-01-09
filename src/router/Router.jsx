@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom"
+import { AdminPage } from "../pages/AdminPage"
 import { HomePage } from "../pages/HomePage"
 import { LoginPage } from "../pages/LoginPage"
 import { NotFoundPage } from "../pages/NotFoundPage"
@@ -11,6 +12,12 @@ const Router = () => {
       <Route path="/" element={
         <PrivateRoute>
           <HomePage />
+        </PrivateRoute>
+      } />
+
+      <Route path="/admin" element={
+        <PrivateRoute hasRole="admin">
+          <AdminPage />
         </PrivateRoute>
       } />
 
