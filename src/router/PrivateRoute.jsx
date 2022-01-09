@@ -6,8 +6,8 @@ export const PrivateRoute = ({ hasRole: role, children }) => {
 
   const auth = useAuth()
 
-  if (role) {
-    return auth?.role === role ? children : auth ? <ForbiddenPage /> : <Navigate to="/login" />
+  if (role && auth) {
+    return auth.role === role ? children : <ForbiddenPage />
   }
 
   return auth ? children : <Navigate to="/login" />
