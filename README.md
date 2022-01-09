@@ -17,3 +17,6 @@ Basado en la serie [MERN Stack proyecto](https://www.youtube.com/playlist?list=P
 - Redirección a ruta original luego de haber sido enviado al login.
 - Cierre de sesión.
 - Página 404 en caso de ruta no válida
+
+## Demo
+[https://lautaroriveiro.github.io/auth-reactjs](https://lautaroriveiro.github.io/auth-reactjs)
