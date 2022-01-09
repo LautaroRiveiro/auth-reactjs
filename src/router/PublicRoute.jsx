@@ -5,5 +5,5 @@ export const PublicRoute = ({ children }) => {
   const location = useLocation()
   const auth = useAuth()
 
-  return auth ? <Navigate to={location.state.from || "/"} /> : children
+  return auth ? <Navigate to={location.state?.from || "/"} /> : children
 }
