@@ -3,6 +3,7 @@ import { HomePage } from "../pages/HomePage"
 import { LoginPage } from "../pages/LoginPage"
 import { NotFoundPage } from "../pages/NotFoundPage"
 import { PrivateRoute } from "./PrivateRoute"
+import { PublicRoute } from "./PublicRoute"
 
 const Router = () => {
   return (
@@ -12,7 +13,12 @@ const Router = () => {
           <HomePage />
         </PrivateRoute>
       } />
-      <Route path="/login" element={<LoginPage />} />
+
+      <Route path="/login" element={
+        <PublicRoute>
+          <LoginPage />
+        </PublicRoute>
+      } />
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
