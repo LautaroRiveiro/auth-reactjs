@@ -3,6 +3,7 @@ import { AdminPage } from "../pages/AdminPage"
 import { HomePage } from "../pages/HomePage"
 import { LoginPage } from "../pages/LoginPage"
 import { NotFoundPage } from "../pages/NotFoundPage"
+import { UserPage } from "../pages/UserPage"
 import { PrivateRoute } from "./PrivateRoute"
 import { PublicRoute } from "./PublicRoute"
 
@@ -12,6 +13,12 @@ const Router = () => {
       <Route path="/" element={
         <PrivateRoute>
           <HomePage />
+        </PrivateRoute>
+      } />
+
+      <Route path="/user" element={
+        <PrivateRoute>
+          <UserPage />
         </PrivateRoute>
       } />
 

@@ -8,7 +8,6 @@ export const Layout = ({ children }) => {
       <Container>
         {children}
       </Container>
-      <footer>Pie de pagona</footer>
     </>
   )
 }
