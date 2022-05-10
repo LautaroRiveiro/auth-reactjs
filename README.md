@@ -22,6 +22,7 @@ Basado en la serie [MERN Stack proyecto](https://www.youtube.com/playlist?list=P
 - **Instalar dependencias:** npm install
 - **Configurar .env:** renombrar .env.template a .env
 - **Iniciar en desarrollo:** npm run start
+- **Deploy a gh-pages:** npm run deploy
 
 ## Demo
 [https://lautaroriveiro.github.io/auth-reactjs](https://lautaroriveiro.github.io/auth-reactjs)
