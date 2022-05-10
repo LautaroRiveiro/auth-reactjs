@@ -6,12 +6,9 @@ import App from './App'
 import { AuthContextProvider } from "./auth/AuthContext"
 import './index.css'
 
-// TODO: Mover a variable de entorno
-const prod = true
-
 ReactDOM.render(
   <AuthContextProvider>
-    <BrowserRouter basename={prod ? "/auth-reactjs" : '/'}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </AuthContextProvider>,

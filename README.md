@@ -18,5 +18,10 @@ Basado en la serie [MERN Stack proyecto](https://www.youtube.com/playlist?list=P
 - Cierre de sesión.
 - Página 404 en caso de ruta no válida
 
+## Para correrlo
+- **Instalar dependencias:** npm install
+- **Configurar .env:** renombrar .env.template a .env
+- **Iniciar en desarrollo:** npm run start
+
 ## Demo
 [https://lautaroriveiro.github.io/auth-reactjs](https://lautaroriveiro.github.io/auth-reactjs)
